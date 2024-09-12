@@ -1,4 +1,4 @@
-FunctionalConnectome_recalcForTau.m --- main program, with comments. need two input files: Metrics***.csv and pyfinal***.csv  Just run.
+FunctionalConnectome_recalcForTau.m --- main program, with comments. need two input files: Metrics***.csv and pyfinal***.csv.
 
 parfor_calling.m ---------------------- parallelized version of the above code. 
 FunctionalConnectome_recalcForTau_forParallel.m
