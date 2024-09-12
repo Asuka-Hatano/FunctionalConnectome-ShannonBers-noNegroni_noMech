@@ -1,6 +1,20 @@
-Copied from
+Copied from local folder:
 Trial014_RecalcTau_SeedNeighborSearch
 
+Main folder (upper folder) is the main stream, most recent code.
+
+Only the SeedNeighbor Search section of the program should be adopted, and when reusing, it should be merged accordingly with the main stream.
+
+* Tau calculation has been corrected
+* The convergence condition remains outdated (it is not using the correct Fractional Error).
+* Main folder output includes additional columns, number of columns in the output data is different.
+
+The calculations in this folder output the results as Yfinal and Metrics files each time.
+While the files are numbered, there are missing numbers. This is due to the use of parfor, the presence of randomness in SeedNeighbor, and occasional crashes during Tau calculation.
+
+CorrectMetricsYfinals***.m code consolidates the results for only the existing numbered files into a single file.
+
+--------------
 Tauの計算は修正されているものの、収束条件が古いまま（正しいFractional Errorになっていない）
 本フォルダの方のプログラムでは追加の列も計算していて、出力データの列数も異なる。
 
